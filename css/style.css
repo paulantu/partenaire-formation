@@ -18,13 +18,8 @@ body, h1, h2, h3, h4, h5, h6 {
 /* -----------------------------------*/
 
 .partenaire-header-banner{
-    background-image: url("../images/banner-background.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 668px;
+    z-index: 1;
 }
-
 .partenaire-header-nav-menu{
     min-height: 90px;
     background-color: #17273E;
@@ -34,7 +29,7 @@ body, h1, h2, h3, h4, h5, h6 {
     border: 1px solid #BCD7FF;
 }
 .navbar-menu li a:hover,
-.show{
+.navbar-menu .show{
     color: #E8030F!important;
 }
 .navbar button{
@@ -79,6 +74,17 @@ body, h1, h2, h3, h4, h5, h6 {
 
 /* filter and grid-list view button start */
 
+
+.partenaire-banner{
+    background-image: url("../images/banner-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 668px;
+    padding-top: 100px;
+    z-index: 2;
+    margin-top: -100px;
+}
 .partenaire-filter-category-label{
     color: #ffffff;
 }
@@ -115,8 +121,8 @@ body, h1, h2, h3, h4, h5, h6 {
 
 
 
-.partenaire-video-playlist-section{
-    margin: 100px 0;
+.partenaire-video-section-first{
+    margin-top: 100px;
 }
 .partenaire-video-section-headline{
     font-family: 'Montserrat', sans-serif;
@@ -271,7 +277,7 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 .partenaire-banner-button button{
     margin-top: 15px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     background-color: #E8030F;
     padding: 10px 20px;
     border-radius: 6px;
@@ -524,6 +530,11 @@ body, h1, h2, h3, h4, h5, h6 {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+
+    .partenaire-banner{
+        padding-top: 650px;
+        margin-top: -800px;
+    }
     .partenaire-logo-navigation-section{
         display: flex;
         justify-content: center;
@@ -542,8 +553,11 @@ body, h1, h2, h3, h4, h5, h6 {
     }
     .banner-headline h1{
         padding: 160px 0px 30px 20px;
-        font-size: 35px;
-        line-height: 42px;
+        font-size: 25px;
+        line-height: 32px;
+    }
+    .partenaire-video-section-first{
+        margin-top: 50px;
     }
     .partenaire-video-playlist-section{
         margin: 50px 0;
